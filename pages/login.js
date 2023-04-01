@@ -12,7 +12,10 @@ export default function Login() {
   const onLoginSubmit = async (values) => {
     console.log(values);
     if(values.username === "admin" && values.password === "admin"){
-      router.push("/heropage");
+      router.push("/nodal-center");
+    }
+    else if(values.username === "superadmin" && values.password === "superadmin"){
+      router.push("/superadmin");
     }
     else{
       message.error("Invalid credentials");

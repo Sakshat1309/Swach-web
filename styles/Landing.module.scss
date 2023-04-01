@@ -1,0 +1,224 @@
+.container {
+    background-color: #fdfdfd;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  
+    .navbar {
+      padding: 3rem;
+      height: 150px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  
+    .hero {
+      display: flex;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+  
+      height: calc(100vh - 150px);
+  
+      .heroText {
+        margin-left: 3rem;
+        padding: auto;
+        width: 60%;
+        font-size: 3.5rem;
+        text-align: center;
+        color: #000000;
+        font-style: italic;
+        font-weight: 600;
+        align-items: center;
+        span {
+          color: #f39d62 ;
+        }
+
+        .heroText2{
+            
+            font-size: 1.2rem;
+            color: #000000;
+            font-style: normal;
+            font-weight: 300;
+        }
+      }
+      .heroImage {
+        width: 50%;
+  
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  
+    .about {
+      height: 100vh;
+  
+      .aboutCarousel {
+        height: 50%;
+        width: 60%;
+        padding-bottom: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        align-items: center;
+        justify-content: center;
+        display: flexbox;
+      }
+      .startups {
+        margin-top: 5vh;
+        .aboutStats {
+          display: flex;
+          align-items: center;
+          justify-content: space-around;
+          .aboutStatsItem {
+            margin-top: -6rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #fff;
+            box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            width: 25%;
+            height: 12rem;
+            padding: 2rem;
+            font-size: 2rem;
+            .aboutStatsItemNumber {
+              font-size: 3rem;
+            }
+          }
+        }
+        height: 50%;
+        background-color: #fff;
+  
+        .aboutMarq {
+          margin-top: 10%;
+          img {
+            height: 8rem;
+            margin-right: 2rem;
+            padding: 0 2rem;
+          }
+        }
+      }
+    }
+  
+    .aboutDeets {
+      height: auto;
+      background-color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      padding: 2rem;
+  
+      .about1 {
+        background-color: #e6e2f5;
+        width: 90%;
+        border-radius: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin-bottom: 2rem;
+      }
+  
+      .about2 {
+        background-color: #fef7e5;
+        width: 90%;
+        border-radius: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin-bottom: 2rem;
+      }
+    }
+    .testimonials {
+      background-color: #121212;
+      padding: 3rem;
+  
+      .testimonialsTitle {
+        font-size: 2rem;
+        width: fit-content;
+        color: #fff;
+        // give a bottom half underline
+        position: relative;
+        &:after {
+          content: "";
+          position: absolute;
+          bottom: -0.5rem;
+          left: 0;
+          width: 50%;
+          height: 2px;
+          background-color: #f39d62;
+        }
+      }
+      .testimonialsCarousel {
+        margin-top: 4rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .testimonialsCarouselItem {
+          background-color: #fff;
+          padding: 3rem;
+          width: 30%;
+          border-radius: 10px;
+  
+          .testimonialsCarouselItemTitle {
+            font-size: 1.5rem;
+            font-weight: 500;
+            margin-bottom: 1rem;
+          }
+        }
+      }
+    }
+  }
+  
+  .registerBtn {
+    background-color: #161616;
+    color: #fffdfd;
+    width: auto;
+    height: fit-content;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-left: 11rem;
+    margin-right: 1rem;
+    font-style: normal;
+    font-size: 1.2rem;
+    a {
+      text-decoration: none;
+      color: #fdfcfc;
+      font-weight: 400;
+    }
+    &:hover {
+      box-shadow: 0 0 10px 0 #fff;
+    }
+  }
+  .loginBtn {
+    background-color: #f39d62;
+    color: #fff;
+    width: auto;
+    height: fit-content;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-style: normal;
+    cursor: pointer;
+    font-size: 1.2rem;
+  
+    a {
+      text-decoration: none;
+      color: #fff;
+      font-weight: 400;
+    }
+  
+    &:hover {
+      box-shadow: 0 0 10px 0 #f39d62;
+    }
+  }
+  
+  .footer {
+    // only show upper half of the text
+    position: relative;
+    text-align: center;
+    color: rgba($color: #000000, $alpha: 0.3);
+    font-size: 10rem;
+  }

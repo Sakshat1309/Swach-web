@@ -1,4 +1,5 @@
 .main_signup1{
+    background-color: #ffffff;
   font-size: 30px;
   color:rgb(13, 13, 13);
   display: flex;
@@ -13,17 +14,13 @@
       
       :global {
           .ant-image-img {
-             display: flex;
-             align-items: center;
-             justify-content: center;
-             margin: auto;
+            margin-top: 20vh;
               height: 100%;
               width: 100%;
           }
       }
   }
   .two{
-      background-color: #f0eeee;
       width: 55%;
       height: 100%;
       display: flex;
@@ -39,17 +36,17 @@
           font-size: 0.8rem;
       }
       .title {
-          color: #22a827 ;
+          color: #f39d62 ;
           padding-bottom: 10px;
       }
       .register{
           width: 80%;
           margin-top: 50px;
-          color: rgb(13, 13, 13);
+          color: rgb(255, 255, 255);
           margin-left: 7vh;
           margin-right: auto;
           height: 48px ;
-          background-color: #22a827 ;
+          background-color: #f39d62 ;
           border-radius: 116px;
           text-align: center;
           font-size: medium;
@@ -61,7 +58,7 @@
           margin-left: 8vh;
           margin-right: auto;
           height: 48px ;
-          background-color: #22a827;
+          background-color: #f39d62;
           border-radius: 116px;
           text-align: center;
           font-size: medium;
