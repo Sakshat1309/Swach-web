@@ -1,0 +1,57 @@
+.container {
+  display: flex;
+  padding: 0 2rem;
+  width: 100%;
+
+  canvas {
+    width: 100%;
+    height: 100% !important;
+  }
+
+  .card {
+    height: 30%;
+    display: flex;
+
+    .cardLeft {
+      display: flex;
+      padding: 1rem 0;
+      flex-direction: column;
+      justify-content: center;
+
+      h3 {
+        margin: 0;
+      }
+      span {
+        font-size: 2rem;
+        margin: 0;
+      }
+
+      p {
+        margin: 0;
+      }
+    }
+
+    :global {
+      .ant-card-body {
+        display: flex;
+        width: 100%;
+      }
+    }
+
+    .cardLeft {
+      width: 50%;
+    }
+
+    .cardRight {
+      width: 50%;
+    }
+  }
+}
+
+.mapContainer {
+  svg {
+    position: relative !important;
+    width: 100%;
+    height: 85vh;
+  }
+}
